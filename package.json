@@ -4,6 +4,7 @@
   "description": "GENUSS Official Black Friday Solar & Batteries Landing Page",
   "main": "server.js",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "start": "node server.js",
     "serve": "node server.js"
   },
