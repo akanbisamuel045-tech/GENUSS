@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#04282A">
+    <title>GENUSS | Black Friday Solar & Battery Deals - Freed From Desire</title>
+    <meta name="description" content="GENUSS Official Black Friday Solar & Battery Sale. Premium solar inverters, lithium batteries, and tubular packages at exclusive promotional prices across Nigeria.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter & Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        genuss: {
+                            teal: '#08484B',
+                            tealLight: '#0d6569',
+                            darkTeal: '#04282A',
+                            gold: '#D4AF37',
+                            goldLight: '#F7D774',
+                            goldHover: '#B89528',
+                            orange: '#E65100',
+                            red: '#C62828',
+                            dark: '#0F172A',
+                            cardBg: '#132325',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Glassmorphism & Keyframe Animations */
+        .glass-panel {
+            background: rgba(8, 72, 75, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+        
+        .badge-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+
+        .sale-dot {
+            animation: sale-dot-pulse 1.4s ease-in-out infinite;
+        }
+
+        .deal-ticker {
+            animation: ticker-slide-in 500ms ease-out;
+        }
+
+        .flash-deal-card {
+            animation: flash-deal-in 400ms ease-out;
+        }
+
+        .choice-marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            border-top: 2px solid rgba(212, 175, 55, 0.5);
+            border-bottom: 2px solid rgba(212, 175, 55, 0.5);
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .choice-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: choice-marquee-scroll 28s linear infinite;
+        }
+
+        .choice-marquee-message {
+            flex: 0 0 auto;
+            padding: 0.8rem 1.25rem;
+            color: #F7D774;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            text-shadow: 0 1px 8px rgba(212, 175, 55, 0.35);
+        }
+
+        @keyframes choice-marquee-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .product-card {
+            transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .product-card:focus-visible {
+            outline: 3px solid #D4AF37;
+            outline-offset: 4px;
+        }
+
+        .product-card,
+        .product-card > * {
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .product-price {
+            overflow-wrap: anywhere;
+            line-height: 1.1;
+        }
+
+        @keyframes sale-dot-pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.35); opacity: 0.65; }
+        }
+
+        @keyframes ticker-slide-in {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes flash-deal-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 15px rgba(230, 81, 0, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(230, 81, 0, 0.95);
+            }
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #B89528 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #F7D774 0%, #D4AF37 50%, #B89528 100%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #04282A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+
+        button, a, input {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            min-width: 320px;
+            overflow-x: hidden;
+        }
+
+        body {
+            min-height: 100svh;
+            overflow-x: hidden;
+        }
+
+        .safe-bottom {
+            bottom: max(1.25rem, env(safe-area-inset-bottom));
+        }
+
+        .safe-left {
+            left: max(1.25rem, env(safe-area-inset-left));
+        }
+
+        @media (max-width: 420px) {
+            .product-card {
+                padding: 1rem;
+            }
+            .product-card .product-price {
+                font-size: 1.1rem;
+            }
+        }
+
+        button:focus-visible, a:focus-visible, input:focus-visible {
+            outline: 3px solid #D4AF37;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+            .choice-marquee {
+                white-space: normal;
+            }
+            .choice-marquee-track {
+                display: block;
+                text-align: center;
+                transform: none;
+            }
+            .choice-marquee-message[aria-hidden="true"] {
+                display: none;
+            }
+        }
+
+        /* Range Slider Styling */
+        input[type=range] {
+            accent-color: #D4AF37;
+        }
+
+        /* Highlight animation for recommended card */
+        @keyframes highlight-glow {
+            0%, 100% { border-color: #D4AF37; box-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+            50% { border-color: #F7D774; box-shadow: 0 0 45px rgba(247, 215, 116, 0.9); }
+        }
+        .highlight-recommendation {
+            animation: highlight-glow 1.2s ease-in-out 3;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-genuss-gold selection:text-black min-h-screen flex flex-col overflow-hidden">
+    <a id="pageTop" class="sr-only" aria-label="Top of page"></a>
+
+    <!-- ========================================== -->
+    <!-- 1. BLACK FRIDAY SOCIAL MEDIA AD OVERLAY     -->
+    <!-- ========================================== -->
+    <div id="adModalOverlay" role="dialog" aria-modal="true" aria-labelledby="promoTitle" onclick="handleAdBackdropClick(event)" class="fixed inset-0 z-50 flex items-center justify-center p-3 md:p-6 bg-black/85 backdrop-blur-md transition-opacity duration-300 opacity-100">
+        <!-- Container mimicking high-converting Social Promo Banner (FB/TikTok/IG 4:5 or 1:1 Aspect ratio optimized) -->
+        <div id="adModalContent" class="relative w-full max-w-xl bg-gradient-to-br from-genuss-darkTeal via-slate-900 to-black border-2 border-genuss-gold rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
+            
+            <!-- Close Button -->
+            <button onclick="closeAdModal()" aria-label="Close Black Friday promotion" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/70 border border-genuss-gold/50 text-white hover:bg-genuss-gold hover:text-black flex items-center justify-center transition-all duration-200">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <!-- Top Header Flash -->
+            <div class="bg-gradient-to-r from-red-600 via-genuss-orange to-red-600 text-white font-bold text-center py-2 text-xs md:text-sm tracking-widest uppercase flex items-center justify-center gap-2 shadow-md">
+                <i class="fa-solid fa-bolt animate-bounce"></i> OFFICIAL BLACK FRIDAY MEGA SALE IS LIVE <i class="fa-solid fa-bolt animate-bounce"></i>
+            </div>
+
+            <!-- Ad Graphic Content Area -->
+            <div class="p-5 md:p-8 flex-1 overflow-y-auto flex flex-col justify-between space-y-6">
+                
+                <!-- Main Headlines & Slogans -->
+                <div class="text-center space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-genuss-gold/10 border border-genuss-gold/30 text-genuss-gold text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-solar-panel"></i> GENUSS Solar Energy & Batteries
+                    </div>
+                    <h1 id="promoTitle" class="font-heading font-black text-3xl md:text-5xl text-white uppercase tracking-tight leading-none drop-shadow-md">
+                        IT'S <span class="text-red-500">BLACK FRIDAY</span>
+                    </h1>
+                    <p class="font-heading font-bold text-xl md:text-2xl gold-gradient-text tracking-widest uppercase italic">
+                        "FREED FROM DESIRE"
+                    </p>
+                    <p class="text-slate-300 text-xs md:text-sm max-w-md mx-auto">
+                        Say goodbye to grid failure and soaring electricity bills. Premium solar inverters, lithium, and tubular batteries at unheard-of prices!
+                    </p>
+                </div>
+
+                <!-- Featured Top Seller Spotlight -->
+                <div class="grid grid-cols-1 gap-3 my-2">
+                    <!-- Starter Spotlight -->
+                    <div class="max-w-sm mx-auto w-full bg-slate-900/90 border border-genuss-gold/40 rounded-2xl p-4 relative group hover:border-genuss-gold transition-all shadow-lg">
+                        <span class="absolute top-3 right-3 z-10 bg-red-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow">15% OFF</span>
+                        <div class="h-44 w-full bg-slate-800 rounded-xl flex items-center justify-center overflow-hidden mb-3 relative border border-genuss-gold/20">
+                            <img src="assets/top-seller-starter.png" alt="Eastman 220Ah Tubular Battery Starter Package" onerror="this.onerror=null; this.src=generateProductImage('starter')" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="text-base font-bold text-white truncate">Starter Power Pack (Eastman 220Ah + 1kVA)</div>
+                        <div class="flex items-baseline justify-between mt-1">
+                            <div class="text-lg font-black text-genuss-gold">₦487,740 <span class="text-xs text-slate-400 line-through ml-1">₦575,000</span></div>
+                            <span class="text-xs text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded">Free Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Button -->
+                <div class="space-y-3">
+                    <button onclick="closeAdModal()" class="w-full py-4 px-6 rounded-2xl gold-gradient-bg text-black font-black text-lg md:text-xl uppercase tracking-wider hover:brightness-110 active:scale-98 transition-all duration-200 shadow-xl shadow-genuss-gold/25 flex items-center justify-center gap-3 badge-pulse">
+                        <span>EXPLORE BLACK FRIDAY CATALOG</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+                    <!-- Social Media Handles (Facebook, TikTok, Instagram) -->
+                    <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span class="font-medium text-slate-300">Follow official handles:</span>
+                        <div class="flex items-center gap-3 text-base">
+                            <a href="https://www.facebook.com/Genuss.ng" target="_blank" rel="noopener noreferrer" title="Facebook GENUSS.ng" class="text-blue-500 hover:scale-125 transition-transform"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@genussinvestmentlimited1" target="_blank" rel="noopener noreferrer" title="TikTok @genussinvestmentlimited1" class="text-pink-500 hover:scale-125 transition-transform"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/genuss.ng/" target="_blank" rel="noopener noreferrer" title="Instagram @genuss.ng" class="text-amber-500 hover:scale-125 transition-transform"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. MAIN STORE HEADER / NAVIGATION          -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-40 bg-genuss-darkTeal/95 backdrop-blur-md border-b border-genuss-gold/25 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            
+            <!-- Brand Logo -->
+            <a href="#pageTop" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-br from-black to-slate-900 border-2 border-genuss-gold flex items-center justify-center text-genuss-gold font-heading font-black text-2xl shadow-lg group-hover:scale-105 transition-transform">
+                    G
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-black text-2xl tracking-widest text-white leading-none">GENUSS</span>
+                    <span class="text-[10px] text-genuss-goldLight font-bold tracking-wider">SOLAR & BATTERIES</span>
+                </div>
+            </a>
+
+            <!-- Search Bar (Desktop) -->
+            <div class="hidden md:flex flex-1 max-w-md mx-6 relative">
+                <input type="search" id="searchInput" aria-label="Search products" oninput="handleSearchInput(event)" placeholder="Search packages, batteries, inverters, AC, fridge..." class="w-full bg-slate-900/90 border border-slate-700 rounded-full py-2.5 pl-11 pr-4 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-genuss-gold transition-colors">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-3 text-slate-400 text-sm"></i>
+            </div>
+
+            <!-- Right Controls / Socials -->
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <!-- Social Links -->
+                <div class="hidden lg:flex items-center gap-3 border-r border-slate-700/80 pr-4 text-slate-300">
+                    <a href="https://www.facebook.com/Genuss.ng" target="_blank" rel="noopener noreferrer" title="Facebook GENUSS.ng" class="hover:text-genuss-gold transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                    <a href="https://www.tiktok.com/@genussinvestmentlimited1" target="_blank" rel="noopener noreferrer" title="TikTok @genussinvestmentlimited1" class="hover:text-genuss-gold transition-colors"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                    <a href="https://www.instagram.com/genuss.ng/" target="_blank" rel="noopener noreferrer" title="Instagram @genuss.ng" class="hover:text-genuss-gold transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+
+                <!-- Load Estimator Button -->
+                <button onclick="toggleCalculator()" class="bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs sm:text-sm font-semibold py-2 px-3 sm:px-4 rounded-xl border border-genuss-gold/40 hover:border-genuss-gold flex items-center gap-2 transition-all shadow">
+                    <i class="fa-solid fa-calculator text-genuss-gold"></i>
+                    <span class="hidden sm:inline">System Sizer</span>
+                </button>
+
+                <!-- WhatsApp Contact Button -->
+                <button onclick="contactOnWhatsApp()" aria-label="Contact GENUSS Operator on WhatsApp" class="bg-green-600 hover:bg-green-500 text-white text-xs sm:text-sm font-bold py-2 px-3.5 rounded-xl border border-green-400 flex items-center gap-2 transition-all shadow-md hover:shadow-green-900/50">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+                    </span>
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">GENUSS Operator</span>
+                </button>
+
+                <!-- Re-open Promo Pop-up Button -->
+                <button onclick="openAdModal()" class="text-xs bg-red-600/20 text-red-400 border border-red-500/50 px-2.5 py-2 rounded-xl hover:bg-red-600 hover:text-white transition-all font-bold uppercase tracking-wider hidden sm:block">
+                    <i class="fa-solid fa-tag"></i> Black Friday Ad
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative w-full">
+                <input type="search" id="searchInputMobile" aria-label="Search products" oninput="handleSearchInput(event)" placeholder="Search packages, inverters, batteries..." class="w-full bg-slate-900 border border-slate-700 rounded-full py-2 pl-10 pr-4 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-genuss-gold">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2.5 text-slate-400 text-xs"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Customer reassurance strip inspired by genuss.ng -->
+    <section aria-label="GENUSS customer benefits" class="bg-slate-900 border-b border-genuss-gold/20 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-genuss-gold/10 border border-genuss-gold/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-truck-fast text-genuss-gold text-lg" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <div class="text-[11px] font-bold text-white uppercase tracking-wide">Free Delivery</div>
+                    <div class="text-[10px] text-slate-400">For Lagos & Ibadan orders</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-genuss-gold/10 border border-genuss-gold/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-rotate-left text-genuss-gold text-lg" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <div class="text-[11px] font-bold text-white uppercase tracking-wide">90-Day Returns</div>
+                    <div class="text-[10px] text-slate-400">Hassle-free product protection</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-genuss-gold/10 border border-genuss-gold/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-lock text-genuss-gold text-lg" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <div class="text-[11px] font-bold text-white uppercase tracking-wide">Secure Payment</div>
+                    <div class="text-[10px] text-slate-400">Safe bank transfer & card options</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-genuss-gold/10 border border-genuss-gold/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-headset text-genuss-gold text-lg" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <div class="text-[11px] font-bold text-white uppercase tracking-wide">24/7 Support</div>
+                    <div class="text-[10px] text-slate-400">Dedicated solar care specialists</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. HERO BANNER SECTION                     -->
+    <!-- ========================================== -->
+    <section class="relative bg-gradient-to-b from-genuss-darkTeal via-slate-950 to-slate-950 py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800 overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-genuss-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+            
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/20 border border-red-500/50 text-red-400 text-xs font-bold tracking-widest uppercase">
+                    <i class="fa-solid fa-fire animate-pulse"></i> Limited-Time Black Friday Offers
+                </div>
+                <div class="inline-flex items-center gap-3 -rotate-1 rounded-xl border-2 border-black bg-gradient-to-r from-red-600 to-genuss-orange px-5 py-2.5 text-black shadow-[6px_6px_0_#D4AF37]">
+                    <i class="fa-solid fa-bolt text-lg text-yellow-300 animate-pulse"></i>
+                    <span class="font-heading text-lg sm:text-2xl font-black uppercase tracking-tight text-white drop-shadow">IT'S BLACK FRIDAY</span>
+                    <i class="fa-solid fa-bolt text-lg text-yellow-300 animate-pulse"></i>
+                </div>
+                <h2 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white uppercase tracking-tight leading-none">
+                    POWER YOU CAN <br><span class="gold-gradient-text">TRUST & AFFORD</span>
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Say goodbye to endless fuel queues, generator noise, and soaring electricity tariffs. Certified high-performance batteries, hybrid inverters, and high-efficiency solar panels customized for Nigerian homes & businesses.
+                </p>
+                
+                <!-- Live Deal Spotlight -->
+                <div class="mx-auto lg:mx-0 max-w-2xl rounded-2xl border border-red-500/40 bg-red-950/40 px-4 py-3 flex items-center gap-3 text-left shadow-lg" aria-live="polite">
+                    <span class="sale-dot w-3 h-3 rounded-full bg-red-500 shrink-0" aria-hidden="true"></span>
+                    <div class="min-w-0">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-red-300">Live deal spotlight</div>
+                        <div id="dealTicker" class="deal-ticker text-sm font-semibold text-white truncate">Starter Power Pack is a featured Black Friday deal</div>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#catalog" class="px-8 py-4 rounded-xl gold-gradient-bg text-black font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-xl shadow-genuss-gold/20 flex items-center gap-2">
+                        <span>Browse All Deals</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <button onclick="toggleCalculator()" class="px-6 py-4 rounded-xl bg-slate-900 border border-slate-700 hover:border-genuss-gold text-white font-bold text-sm tracking-wider transition-all flex items-center gap-2 shadow">
+                        <span>Calculate Your Load</span>
+                        <i class="fa-solid fa-bolt text-genuss-gold"></i>
+                    </button>
+                    <button onclick="openConsultationModal()" class="px-6 py-4 rounded-xl bg-genuss-teal/40 border border-genuss-gold/30 hover:border-genuss-gold text-genuss-goldLight font-bold text-sm tracking-wider transition-all flex items-center gap-2">
+                        <span>Free Installation Quote</span>
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Spotlight Featured Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-lg bg-slate-900/95 border-2 border-genuss-gold/50 rounded-3xl p-6 sm:p-7 shadow-2xl glass-panel">
+                    <div class="absolute -top-3.5 -right-3 z-10 bg-red-600 text-white font-black text-xs px-3.5 py-1 rounded-full uppercase shadow-lg flex items-center gap-1.5">
+                        <i class="fa-solid fa-fire text-yellow-300"></i> Top Seller
+                    </div>
+                    <div class="h-64 w-full mb-5 rounded-2xl overflow-hidden border border-genuss-gold/30 bg-slate-950">
+                        <img src="assets/top-seller-starter.png" alt="Eastman 220Ah Combo" onerror="this.onerror=null; this.src=generateProductImage('starter')" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-xs text-genuss-gold font-bold uppercase tracking-wider mb-1">Featured Black Friday Bundle</div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">Eastman 220Ah + Sukam 1kVA Combo</h3>
+                    <p class="text-xs text-slate-300 mb-4">Complete plug-and-play starter solution for apartments, homes, and small businesses.</p>
+                    
+                    <div class="bg-black/60 p-3.5 rounded-xl border border-slate-800 mb-4 space-y-1.5 text-xs">
+                        <div class="flex justify-between text-slate-300"><span>Eastman 220Ah Tubular Battery</span><i class="fa-solid fa-check text-green-400"></i></div>
+                        <div class="flex justify-between text-slate-300"><span>Sukam 1kVA Pure Sine Inverter</span><i class="fa-solid fa-check text-green-400"></i></div>
+                        <div class="flex justify-between text-slate-300"><span>40A High-Efficiency Controller</span><i class="fa-solid fa-check text-green-400"></i></div>
+                        <div class="flex justify-between text-slate-300"><span>2 Units 330W Solar Panels</span><i class="fa-solid fa-check text-green-400"></i></div>
+                    </div>
+
+                    <div class="flex items-baseline justify-between mb-4">
+                        <div>
+                            <span class="text-2xl sm:text-3xl font-black text-genuss-gold">₦487,740</span>
+                            <span class="text-xs text-slate-400 line-through ml-2">₦575,000</span>
+                            <span class="block text-xs text-red-400 font-bold mt-1">SAVE ₦87,260 (15% OFF)</span>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-950/70 border border-emerald-800 px-2.5 py-1 rounded">Free Lagos Delivery</span>
+                    </div>
+
+                    <button onclick="contactOnWhatsApp(1)" class="w-full py-3.5 bg-green-600 hover:bg-green-500 text-white font-bold uppercase text-xs sm:text-sm rounded-xl transition-colors shadow-lg shadow-green-950/60 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Order / Inquire on WhatsApp
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. FLASH DEALS SECTION                     -->
+    <!-- ========================================== -->
+    <section id="flashDeals" aria-labelledby="flashDealsTitle" class="bg-slate-950 px-4 sm:px-6 lg:px-8 py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-6 flex justify-center">
+                <div class="inline-flex items-center gap-3 -rotate-1 rounded-full border-2 border-genuss-gold bg-black px-5 py-2 text-genuss-gold shadow-[0_0_24px_rgba(212,175,55,0.35)]">
+                    <i class="fa-solid fa-fire text-red-500 animate-pulse"></i>
+                    <span class="font-heading text-lg sm:text-2xl font-black uppercase tracking-wider">IT'S BLACK FRIDAY</span>
+                    <i class="fa-solid fa-fire text-red-500 animate-pulse"></i>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-red-400 text-xs font-black uppercase tracking-widest">
+                        <i class="fa-solid fa-bolt animate-pulse"></i> Rotating Flash Sale
+                    </div>
+                    <h2 id="flashDealsTitle" class="font-heading font-black text-3xl md:text-4xl text-white uppercase tracking-tight mt-2">
+                        FLASH <span class="text-genuss-gold">DEALS</span>
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1">Exclusive limited-stock deals rotated regularly during the Black Friday campaign.</p>
+                </div>
+                
+                <!-- Countdown Timer & Switcher -->
+                <div class="flex items-center gap-4">
+                    <div class="shrink-0 rounded-2xl border border-red-500/40 bg-red-950/40 px-5 py-3 text-center shadow">
+                        <div class="text-[10px] text-red-300 font-bold uppercase tracking-widest">Deal ends in</div>
+                        <div id="flashDealTimer" class="text-2xl font-black text-white tabular-nums tracking-wider" aria-live="polite">04:00:00</div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <button onclick="prevFlashDeal()" aria-label="Previous flash deal" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold flex items-center justify-center text-xs">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button onclick="nextFlashDeal()" aria-label="Next flash deal" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold flex items-center justify-center text-xs">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flash Deal Card -->
+            <div id="flashDealCard" class="flash-deal-card grid grid-cols-1 lg:grid-cols-12 gap-6 items-center rounded-3xl border border-genuss-gold/40 bg-slate-900/90 p-5 sm:p-8 shadow-2xl cursor-pointer hover:border-genuss-gold transition-all" role="button" tabindex="0" aria-label="View flash deal details">
+                <div class="lg:col-span-5 h-64 sm:h-80 rounded-2xl overflow-hidden border border-genuss-gold/30 bg-slate-950 flex items-center justify-center">
+                    <img id="flashDealImage" src="assets/top-seller-starter.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-7 space-y-3">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div id="flashDealBadge" class="inline-flex rounded-full bg-red-600 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-white">Flash Deal</div>
+                        <span id="flashDealSavings" class="text-xs font-bold text-red-400 bg-red-950/70 border border-red-800/80 px-2.5 py-0.5 rounded-full">15% OFF</span>
+                        <span class="text-xs text-amber-300 bg-amber-950/60 border border-amber-800/80 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-clock mr-1"></i>Limited stock remaining</span>
+                    </div>
+                    
+                    <h3 id="flashDealName" class="font-heading font-black text-2xl sm:text-3xl text-white"></h3>
+                    <p id="flashDealDesc" class="text-slate-400 text-sm leading-relaxed"></p>
+                    
+                    <!-- Progress Bar for Urgency -->
+                    <div class="space-y-1 pt-1 max-w-md">
+                        <div class="flex justify-between text-xs font-bold">
+                            <span class="text-red-400"><i class="fa-solid fa-fire mr-1"></i>Claimed: 84%</span>
+                            <span class="text-slate-400">Only 3 units left</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden border border-slate-700">
+                            <div class="bg-gradient-to-r from-yellow-500 to-red-600 h-full w-[84%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-end gap-3 pt-2">
+                        <span id="flashDealPrice" class="text-3xl sm:text-4xl font-black text-genuss-gold"></span>
+                        <span id="flashDealOriginalPrice" class="text-base text-slate-500 line-through"></span>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3 pt-3">
+                        <button id="flashDealOrderButton" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-green-600 text-white font-black uppercase text-xs tracking-wider hover:bg-green-500 transition-all flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Contact on WhatsApp
+                        </button>
+                        <button id="flashDealDetailsButton" class="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-800 text-xs font-bold uppercase tracking-wider text-slate-200 hover:border-genuss-gold transition-colors flex items-center justify-center gap-2">
+                            <span>View Full Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. FUEL SAVINGS ROI CALCULATOR             -->
+    <!-- ========================================== -->
+    <section class="bg-gradient-to-b from-slate-950 via-genuss-darkTeal/40 to-slate-950 py-14 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto bg-slate-900/90 border border-genuss-gold/35 rounded-3xl p-6 sm:p-10 shadow-2xl">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-coins"></i> Generator Fuel vs Solar Calculator
+                </div>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-white uppercase tracking-tight">
+                    HOW MUCH ARE YOU <span class="gold-gradient-text">SPENDING ON FUEL?</span>
+                </h2>
+                <p class="text-slate-300 text-sm mt-2">
+                    With fuel prices between ₦1,000 and ₦1,200/liter in Nigeria, a GENUSS solar system pays for itself faster than ever before.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <!-- Slider Controls -->
+                <div class="md:col-span-6 space-y-5">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label for="fuelSlider" class="text-xs sm:text-sm font-bold text-slate-300 uppercase tracking-wider">Monthly Fuel & Generator Expense</label>
+                            <span id="fuelMonthlyDisplay" class="text-lg font-black text-genuss-gold">₦120,000 / mo</span>
+                        </div>
+                        <input type="range" id="fuelSlider" min="30000" max="600000" step="10000" value="120000" oninput="updateFuelSavings()" class="w-full h-3 bg-slate-800 rounded-lg cursor-pointer">
+                        <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                            <span>₦30,000</span>
+                            <span>₦300,000</span>
+                            <span>₦600,000+</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/50 p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
+                        <div class="flex justify-between text-slate-300">
+                            <span>Estimated Daily Generator Hours:</span>
+                            <span id="genHoursDisplay" class="font-bold text-white">~5 to 7 hours/day</span>
+                        </div>
+                        <div class="flex justify-between text-slate-300">
+                            <span>Annual Generator Servicing & Oil:</span>
+                            <span id="genServiceDisplay" class="font-bold text-white">~₦120,000/yr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Savings Projection Card -->
+                <div class="md:col-span-6 bg-gradient-to-br from-genuss-darkTeal to-black border-2 border-genuss-gold/40 rounded-2xl p-6 text-center space-y-4 shadow-xl">
+                    <div class="text-xs uppercase font-bold text-emerald-400 tracking-wider">Your Total Projected Fuel Waste</div>
+                    
+                    <div class="grid grid-cols-2 gap-3 text-left">
+                        <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                            <div class="text-[10px] text-slate-400">1 Year Fuel Cost</div>
+                            <div id="fuel1Year" class="text-base sm:text-lg font-black text-white">₦1,440,000</div>
+                        </div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                            <div class="text-[10px] text-slate-400">3 Years Fuel Cost</div>
+                            <div id="fuel3Year" class="text-base sm:text-lg font-black text-red-400">₦4,320,000</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-slate-800">
+                        <div class="text-xs text-slate-300">With GENUSS Solar, your system pays for itself in:</div>
+                        <div id="paybackTimeline" class="text-2xl font-black text-genuss-gold mt-1">~12 - 16 Months</div>
+                        <div class="text-[11px] text-emerald-400 font-semibold mt-1">After payback, your electricity is 100% FREE for 15+ years!</div>
+                    </div>
+
+                    <button onclick="document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' })" class="w-full py-3 rounded-xl gold-gradient-bg text-black font-black uppercase text-xs tracking-wider hover:brightness-110 transition-all shadow">
+                        Stop Fuel Waste — Choose A System
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. TIERED CATEGORY SELECTION & CATALOG    -->
+    <!-- ========================================== -->
+    <main id="catalog" class="w-full min-w-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex-1">
+        
+        <!-- Section Title & Tier Navigation -->
+        <div class="text-center space-y-3 mb-10">
+            <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white uppercase tracking-tight">
+                SELECT YOUR <span class="text-genuss-gold">POWER SOLUTION TIER</span>
+            </h2>
+            <div class="choice-marquee" aria-label="Make the right choice">
+                <div class="choice-marquee-track">
+                    <span class="choice-marquee-message">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                    <span class="choice-marquee-message" aria-hidden="true">Make the right choice here <i class="fa-solid fa-bolt mx-3" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                Carefully engineered solar energy packages designed for every Nigerian home, flat, duplex, office, and factory.
+            </p>
+
+            <!-- Tier Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 pt-4">
+                <button onclick="setCategoryFilter('all')" id="tab-all" class="tier-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-genuss-gold text-black transition-all shadow-md">
+                    All Deals <span id="count-all" class="ml-1 opacity-80">(8)</span>
+                </button>
+                <button onclick="setCategoryFilter('starter')" id="tab-starter" class="tier-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold transition-all">
+                    <i class="fa-solid fa-seedling text-emerald-400 mr-1"></i> Starter (Budget / Basic) <span id="count-starter" class="ml-1 opacity-70">(2)</span>
+                </button>
+                <button onclick="setCategoryFilter('mid')" id="tab-mid" class="tier-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold transition-all">
+                    <i class="fa-solid fa-house-laptop text-amber-400 mr-1"></i> Standard (Middle Class) <span id="count-mid" class="ml-1 opacity-70">(3)</span>
+                </button>
+                <button onclick="setCategoryFilter('luxury')" id="tab-luxury" class="tier-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold transition-all">
+                    <i class="fa-solid fa-crown text-genuss-gold mr-1"></i> Luxury & Enterprise <span id="count-luxury" class="ml-1 opacity-70">(2)</span>
+                </button>
+                <button onclick="setCategoryFilter('batteries')" id="tab-batteries" class="tier-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-900 border border-slate-700 text-slate-300 hover:border-genuss-gold transition-all">
+                    <i class="fa-solid fa-car-battery text-cyan-400 mr-1"></i> Batteries Only <span id="count-batteries" class="ml-1 opacity-70">(3)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-w-0 pb-8">
+            <!-- Dynamic Injection via JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 7. WHY GENUSS & SOLAR BENEFITS             -->
+    <!-- ========================================== -->
+    <section class="bg-genuss-darkTeal/70 border-y border-genuss-gold/25 px-4 sm:px-6 lg:px-8 py-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <div class="text-xs text-genuss-gold font-bold uppercase tracking-widest mb-2">Power With Total Confidence</div>
+                <h2 class="font-heading font-black text-3xl md:text-4xl text-white uppercase">
+                    Why choose <span class="text-genuss-gold">GENUSS Solar?</span>
+                </h2>
+                <p class="text-slate-300 mt-2 text-sm sm:text-base">Leading solar energy systems, high-durability tubular and lithium batteries with direct manufacturer warranties.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16">
+                <div class="rounded-3xl overflow-hidden border-2 border-genuss-gold/30 bg-slate-900 shadow-2xl relative">
+                    <img src="assets/top-seller-starter.png" alt="GENUSS solar starter power package" onerror="this.onerror=null; this.src=generateProductImage('starter')" class="w-full h-80 sm:h-96 object-cover" loading="lazy">
+                    <div class="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md p-4 rounded-2xl border border-genuss-gold/30 flex items-center justify-between">
+                        <div>
+                            <div class="text-xs text-genuss-gold font-bold uppercase">Certified Solar Equipment</div>
+                            <div class="text-sm font-black text-white">Eastman, Sukam, DEYE & Felicity</div>
+                        </div>
+                        <button onclick="contactOnWhatsApp()" class="px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-bold text-xs rounded-xl">
+                            Chat Now
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 hover:border-genuss-gold/40 transition-colors">
+                        <i class="fa-solid fa-shield-halved text-genuss-gold text-2xl mb-3" aria-hidden="true"></i>
+                        <h3 class="font-bold text-white mb-2 text-base">Direct Warranties</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Official manufacturer warranties on all batteries, hybrid inverters, and tier-1 solar panels.</p>
+                    </div>
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 hover:border-genuss-gold/40 transition-colors">
+                        <i class="fa-solid fa-compass text-genuss-gold text-2xl mb-3" aria-hidden="true"></i>
+                        <h3 class="font-bold text-white mb-2 text-base">Accurate Sizing</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">We calculate your appliances and daily hours to recommend a system that never trips or underperforms.</p>
+                    </div>
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 hover:border-genuss-gold/40 transition-colors">
+                        <i class="fa-solid fa-screwdriver-wrench text-genuss-gold text-2xl mb-3" aria-hidden="true"></i>
+                        <h3 class="font-bold text-white mb-2 text-base">Certified Engineers</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Professional nationwide deployment with proper earthing, surge protection, and neat cabling.</p>
+                    </div>
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 hover:border-genuss-gold/40 transition-colors">
+                        <i class="fa-solid fa-headset text-genuss-gold text-2xl mb-3" aria-hidden="true"></i>
+                        <h3 class="font-bold text-white mb-2 text-base">Lifetime Aftercare</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Dedicated support line, periodic maintenance advice, and priority replacement guarantees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Solar 3-column Grid -->
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="font-heading font-black text-2xl md:text-3xl text-white uppercase">
+                    Why switch to <span class="text-genuss-gold">solar power today?</span>
+                </h2>
+                <p class="text-slate-300 text-sm mt-2">Energy independence protects your family and business from perpetual grid uncertainty.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="text-center bg-black/40 border border-slate-800 rounded-2xl p-6 hover:border-genuss-gold/30 transition-all">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-bolt text-emerald-400 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Uninterrupted 24/7 Power</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">No flickering, no sudden shutdowns. Keep your ACs, deep freezers, laptops, and light fixtures powered around the clock.</p>
+                </div>
+                <div class="text-center bg-black/40 border border-slate-800 rounded-2xl p-6 hover:border-genuss-gold/30 transition-all">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-chart-line text-emerald-400 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Zero Fuel Costs</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Dramatically reduce or completely eliminate generator fuel expenses. Free solar energy recharges your battery bank every morning.</p>
+                </div>
+                <div class="text-center bg-black/40 border border-slate-800 rounded-2xl p-6 hover:border-genuss-gold/30 transition-all">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-leaf text-emerald-400 text-2xl" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Quiet & Pollution-Free</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Say goodbye to toxic generator exhaust fumes and disturbing vibration. Enjoy complete silence and clean indoor air.</p>
+                </div>
+            </div>
+
+            <!-- Customer feedback -->
+            <div class="text-center mb-8">
+                <div class="text-xs text-genuss-gold font-bold uppercase tracking-widest mb-2">Verified Customer Testimonials</div>
+                <h2 class="font-heading font-black text-2xl md:text-3xl text-white uppercase">What our customers say</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow">
+                    <div class="text-genuss-gold text-sm mb-3" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-sm text-slate-300 italic">“The Eastman starter package was easy to understand. Delivered to Lekki next day, and powers my 55-inch TV, fans, and small fridge without breaking a sweat!”</p>
+                    <div class="mt-4 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-genuss-gold/20 text-genuss-gold font-bold text-xs flex items-center justify-center">AB</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Adewale Bello</div>
+                            <div class="text-[10px] text-slate-500">Lekki, Lagos · Verified Buyer</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow">
+                    <div class="text-genuss-gold text-sm mb-3" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-sm text-slate-300 italic">“The power load estimator on this page was spot on. Recommended the 5kVA Felicity hybrid setup for my duplex. Our inverter AC and deep freezer run 24 hours now.”</p>
+                    <div class="mt-4 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-genuss-gold/20 text-genuss-gold font-bold text-xs flex items-center justify-center">TO</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Tochukwu Okafor</div>
+                            <div class="text-[10px] text-slate-500">Ibadan, Oyo State · Verified Buyer</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow">
+                    <div class="text-genuss-gold text-sm mb-3" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-sm text-slate-300 italic">“We installed the DEYE 12kW system at our dental clinic. Zero downtime during procedures, zero generator noise, and the smart mobile app lets me monitor solar production.”</p>
+                    <div class="mt-4 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-genuss-gold/20 text-genuss-gold font-bold text-xs flex items-center justify-center">MA</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Dr. Morounke Adeyemi</div>
+                            <div class="text-[10px] text-slate-500">Victoria Island, Lagos · Commercial Buyer</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. FREQUENTLY ASKED QUESTIONS (FAQ)        -->
+    <!-- ========================================== -->
+    <section class="bg-slate-950 py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <div class="text-xs text-genuss-gold font-bold uppercase tracking-widest mb-2">Got Questions?</div>
+                <h2 class="font-heading font-black text-3xl md:text-4xl text-white uppercase">Frequently Asked Questions</h2>
+                <p class="text-slate-400 text-sm mt-2">Everything you need to know about ordering, delivery, warranties, and installation.</p>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden transition-colors">
+                    <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base hover:text-genuss-gold transition-colors">
+                        <span>How fast is delivery and do you deliver nationwide?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-genuss-gold transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                        Yes! We offer <strong>FREE delivery within Lagos and Ibadan</strong> for eligible packages. For Abuja, Port Harcourt, Enugu, Kano, and all other states, we provide fast, insured logistics directly to your doorstep or designated transport park within 48 to 72 hours.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden transition-colors">
+                    <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base hover:text-genuss-gold transition-colors">
+                        <span>What warranties come with your batteries and inverters?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-genuss-gold transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                        All our products carry genuine manufacturer warranties:
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li><strong>DEYE Hybrid Inverters:</strong> Up to 5-year official warranty.</li>
+                            <li><strong>Felicity & DEYE Lithium Batteries:</strong> 5-year warranty (6,000+ deep cycles).</li>
+                            <li><strong>Eastman & Luminous Tall Tubular Batteries:</strong> 18 to 24 months replacement warranty.</li>
+                            <li><strong>Solar Panels:</strong> 25-year linear power warranty.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden transition-colors">
+                    <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base hover:text-genuss-gold transition-colors">
+                        <span>Can these systems power my Air Conditioners and Water Pump?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-genuss-gold transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                        Absolutely! Our <strong>Standard (5kVA)</strong> tier comfortably powers 1 to 2 inverter ACs, deep freezers, and 1HP pumping machines. For large homes or commercial sites with multiple ACs, our <strong>Luxury & Enterprise (12kW - 20kW)</strong> systems run entire buildings with heavy motor loads. Use our built-in <em>System Sizer</em> above to find the exact match for your appliances.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden transition-colors">
+                    <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base hover:text-genuss-gold transition-colors">
+                        <span>Do you provide professional solar installation?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-genuss-gold transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                        Yes. GENUSS has certified, background-checked solar engineers across Lagos, Ibadan, Ogun, Abuja, and major Nigerian cities. We handle complete roof mounting, DC breaker protection, earthing rod installation, and inverter configuration. You can request installation assistance directly when ordering.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden transition-colors">
+                    <button onclick="toggleFaq(5)" class="w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base hover:text-genuss-gold transition-colors">
+                        <span>How do I order and pay?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-genuss-gold transition-transform"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                        Simply click the green <strong>"Contact on WhatsApp"</strong> button on any package. You'll be connected directly to an official GENUSS sales engineer who will confirm product availability, answer any technical questions, generate your formal invoice, and schedule your delivery. We accept company bank transfers and payment-on-delivery in Lagos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. LOAD CALCULATOR MODAL                   -->
+    <!-- ========================================== -->
+    <div id="calculatorModal" role="dialog" aria-modal="true" aria-labelledby="calculatorTitle" onclick="handleCalculatorBackdropClick(event)" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm hidden">
+        <div id="calculatorModalContent" class="w-full max-w-2xl bg-slate-900 border border-genuss-gold/50 rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[92vh] overflow-y-auto">
+            <button onclick="toggleCalculator()" aria-label="Close load estimator" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="mb-6">
+                <div class="flex items-center gap-2 text-genuss-gold text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-calculator"></i> GENUSS System Sizer & Power Profiler
+                </div>
+                <h3 id="calculatorTitle" class="font-heading font-black text-2xl sm:text-3xl text-white mt-1">Power Load Estimator</h3>
+                <p class="text-xs text-slate-400 mt-1">Select the appliances you plan to power simultaneously. Adjust quantities to find your recommended tier.</p>
+            </div>
+
+            <!-- Appliance Selection Grid -->
+            <div id="applianceList" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                <!-- Javascript populated with quantity counters -->
+            </div>
+
+            <!-- Results Panel -->
+            <div class="bg-black/60 p-5 rounded-2xl border border-slate-800 text-center space-y-3">
+                <div class="text-xs text-slate-400 uppercase font-bold tracking-wider">Estimated Simultaneous Power Demand</div>
+                <div id="totalLoadDisplay" class="font-heading font-black text-3xl sm:text-4xl text-genuss-gold">0 Watts</div>
+                
+                <!-- Recommendation Details Box -->
+                <div id="recommendationDisplay" class="text-xs sm:text-sm text-slate-300 font-medium bg-slate-950/80 p-3.5 rounded-xl border border-slate-800">
+                    Select appliances above to get tailored tier recommendation.
+                </div>
+            </div>
+
+            <div class="flex gap-3 mt-5">
+                <button onclick="resetCalculator()" class="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold uppercase tracking-wider transition-colors">
+                    Reset
+                </button>
+                <button onclick="applyCalculatorRecommendation()" class="flex-1 py-3.5 rounded-xl gold-gradient-bg text-black font-black uppercase text-xs tracking-wider shadow-lg hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                    <span>View Recommended Package</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 10. PRODUCT DETAIL MODAL                   -->
+    <!-- ========================================== -->
+    <div id="productDetailModal" role="dialog" aria-modal="true" aria-labelledby="productDetailTitle" onclick="handleDetailBackdropClick(event)" class="fixed inset-0 z-[60] hidden overflow-y-auto bg-slate-950/95 backdrop-blur-md">
+        <div class="min-h-full px-4 py-6 sm:px-6 lg:px-8 flex items-center justify-center">
+            <div id="productDetailContent" class="mx-auto w-full max-w-5xl rounded-3xl border border-genuss-gold/40 bg-slate-900 shadow-2xl overflow-hidden my-6">
+                <div class="flex items-center justify-between border-b border-slate-800 p-4 sm:p-6 bg-slate-950/60">
+                    <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-genuss-gold">
+                        <i class="fa-solid fa-solar-panel"></i> Product Specifications & Details
+                    </div>
+                    <button onclick="closeProductDetails()" aria-label="Close product details" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition-colors hover:border-genuss-gold hover:text-white">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <div class="grid gap-8 p-5 sm:p-8 lg:grid-cols-2">
+                    <div>
+                        <div id="productDetailImage" class="h-64 sm:h-96 overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 flex items-center justify-center"></div>
+                        <div class="mt-4 grid grid-cols-3 gap-3 text-center text-[10px] font-bold uppercase tracking-wider text-slate-300">
+                            <div class="rounded-xl border border-slate-800 bg-black/40 p-3"><i class="fa-solid fa-shield-halved mb-1 text-genuss-gold text-base"></i><br>Official Warranty</div>
+                            <div class="rounded-xl border border-slate-800 bg-black/40 p-3"><i class="fa-solid fa-truck-fast mb-1 text-genuss-gold text-base"></i><br>Fast Delivery</div>
+                            <div class="rounded-xl border border-slate-800 bg-black/40 p-3"><i class="fa-solid fa-headset mb-1 text-genuss-gold text-base"></i><br>Certified Support</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span id="productDetailBadge" class="inline-flex rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-wider"></span>
+                            <span id="productDetailSavings" class="text-xs text-red-400 font-bold bg-red-950/70 border border-red-800/80 px-2.5 py-0.5 rounded-full"></span>
+                        </div>
+                        <h2 id="productDetailTitle" class="mt-3 font-heading text-2xl font-black text-white sm:text-3xl leading-snug"></h2>
+                        <div id="productDetailRating" class="mt-3 flex flex-wrap items-center gap-2"></div>
+                        <p id="productDetailDescription" class="mt-4 text-sm leading-relaxed text-slate-300"></p>
+                        
+                        <div class="mt-6 flex flex-wrap items-end gap-3 p-4 bg-black/50 rounded-2xl border border-slate-800">
+                            <div>
+                                <span class="text-[10px] text-slate-400 uppercase font-semibold block">Black Friday Promotional Price:</span>
+                                <span id="productDetailPrice" class="text-3xl sm:text-4xl font-black text-genuss-gold"></span>
+                            </div>
+                            <span id="productDetailOriginalPrice" class="text-sm text-slate-500 line-through pb-1"></span>
+                        </div>
+
+                        <button id="productDetailOrderButton" class="mt-5 w-full rounded-xl bg-green-600 py-4 text-xs sm:text-sm font-black uppercase tracking-wider text-white shadow-xl hover:bg-green-500 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Inquire / Order on WhatsApp
+                        </button>
+                        
+                        <div class="mt-6">
+                            <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-genuss-gold">Included System Components</h3>
+                            <div id="productDetailSpecs" class="mt-3 space-y-2 text-xs sm:text-sm text-slate-300"></div>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-genuss-gold">Appliances Powered</h3>
+                            <div id="productDetailPowers" class="mt-2.5 flex flex-wrap gap-1.5"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Reviews Sub-section -->
+                <div class="border-t border-slate-800 p-5 sm:p-8 bg-black/30">
+                    <div class="flex flex-wrap items-end justify-between gap-3">
+                        <div>
+                            <div class="text-xs font-bold uppercase tracking-widest text-genuss-gold">Verified Buyer Feedback</div>
+                            <h3 class="mt-1 font-heading text-xl font-black text-white">Customer Experiences With This Package</h3>
+                        </div>
+                        <div id="productDetailReviewSummary" class="text-right"></div>
+                    </div>
+                    <div id="productDetailReviews" class="mt-5 grid gap-4 md:grid-cols-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 11. FREE QUOTE / CONSULTATION MODAL        -->
+    <!-- ========================================== -->
+    <div id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="consultationTitle" onclick="handleConsultationBackdropClick(event)" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm hidden">
+        <div id="consultationModalContent" class="w-full max-w-lg bg-slate-900 border border-genuss-gold/50 rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[92vh] overflow-y-auto">
+            <button onclick="closeConsultationModal()" aria-label="Close consultation modal" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="mb-5">
+                <div class="flex items-center gap-2 text-genuss-gold text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-file-invoice"></i> Free Solar Assessment
+                </div>
+                <h3 id="consultationTitle" class="font-heading font-black text-2xl text-white mt-1">Get An Installation Quote</h3>
+                <p class="text-xs text-slate-400 mt-1">Tell us your location and power requirements. A certified GENUSS solar engineer will contact you promptly.</p>
+            </div>
+
+            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Your Full Name</label>
+                    <input type="text" id="quoteName" required placeholder="e.g. Babatunde Adeleke" class="w-full bg-slate-950 border border-slate-700 rounded-xl py-2.5 px-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-genuss-gold">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Phone / WhatsApp Number</label>
+                    <input type="tel" id="quotePhone" required placeholder="e.g. 0803 123 4567" class="w-full bg-slate-950 border border-slate-700 rounded-xl py-2.5 px-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-genuss-gold">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">City / State</label>
+                    <select id="quoteLocation" class="w-full bg-slate-950 border border-slate-700 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none focus:border-genuss-gold">
+                        <option value="Lagos State (Lekki / Island)">Lagos State (Lekki / Island)</option>
+                        <option value="Lagos State (Ikeja / Mainland)">Lagos State (Ikeja / Mainland)</option>
+                        <option value="Ibadan / Oyo State">Ibadan / Oyo State</option>
+                        <option value="Abuja / FCT">Abuja / FCT</option>
+                        <option value="Port Harcourt / Rivers State">Port Harcourt / Rivers State</option>
+                        <option value="Ogun State">Ogun State</option>
+                        <option value="Other Nigerian State">Other Nigerian State</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Package / Appliances of Interest</label>
+                    <textarea id="quoteDetails" rows="3" placeholder="e.g. 3-bedroom flat with 2 ACs, freezer, TVs, and water pump..." class="w-full bg-slate-950 border border-slate-700 rounded-xl py-2 px-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-genuss-gold"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-black uppercase text-xs tracking-wider transition-all shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Submit Quote Request via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 12. FLOATING OPERATOR & BACK TO TOP        -->
+    <!-- ========================================== -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348033057945?text=Hello%20GENUSS%20Operator%2C%20I%27d%20like%20help%20choosing%20a%20solar%20product." target="_blank" rel="noopener noreferrer" aria-label="Contact GENUSS Operator on WhatsApp" class="safe-bottom fixed right-5 z-40 bg-green-500 hover:bg-green-400 border-2 border-green-300 text-white font-black uppercase tracking-wide py-3 px-4 sm:px-5 rounded-2xl shadow-2xl shadow-green-950/60 flex items-center gap-2.5 transition-all hover:-translate-y-1">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        </span>
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <div class="flex flex-col text-left">
+            <span class="text-[9px] text-green-100 font-bold leading-tight">ONLINE NOW</span>
+            <span class="text-xs sm:text-sm leading-tight">GENUSS Operator</span>
+        </div>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()" aria-label="Back to top" title="Back to top" class="safe-bottom safe-left fixed z-40 w-11 h-11 rounded-full bg-genuss-gold text-black shadow-xl flex items-center justify-center opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-genuss-goldHover focus-visible:opacity-100">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Live Social Proof Toast -->
+    <div id="socialProofToast" class="fixed bottom-20 left-4 z-30 max-w-xs bg-slate-900/95 border border-genuss-gold/40 rounded-2xl p-3.5 shadow-2xl transition-all duration-500 opacity-0 translate-y-4 pointer-events-none flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="min-w-0 text-xs">
+            <div id="toastMessage" class="font-bold text-white truncate">New inquiry from Lekki, Lagos</div>
+            <div id="toastTime" class="text-[10px] text-slate-400">Starter Pack · 2 mins ago</div>
+        </div>
+        <button onclick="dismissToast()" class="text-slate-500 hover:text-white text-xs pl-1">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 13. THANK YOU BANNER                       -->
+    <!-- ========================================== -->
+    <section aria-labelledby="thankYouTitle" class="bg-gradient-to-b from-slate-950 via-genuss-darkTeal/80 to-slate-950 border-t border-genuss-gold/25 px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <h2 id="thankYouTitle" class="font-heading font-black text-3xl md:text-5xl text-white uppercase tracking-tight">
+            THANK YOU &amp; SHOP AGAIN
+        </h2>
+        <p class="text-genuss-goldLight text-lg md:text-2xl font-black mt-3 uppercase tracking-wider drop-shadow">
+            You Made The Right Choice With GENUSS
+        </p>
+        <p class="text-slate-300 text-xs sm:text-sm max-w-lg mx-auto mt-2">
+            Enjoy reliable, quiet, non-stop electricity. We are proud to power your home and your business.
+        </p>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 14. FOOTER                                 -->
+    <!-- ========================================== -->
+    <footer class="bg-black border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-genuss-gold text-black font-black flex items-center justify-center text-sm font-heading">G</div>
+                    <span class="font-heading font-black text-xl text-white tracking-widest">GENUSS</span>
+                </div>
+                <p class="text-slate-400 leading-relaxed">
+                    Nigeria's trusted provider of premium solar energy systems, tubular batteries, lithium storage, and smart hybrid inverters.
+                </p>
+                <div class="flex gap-3.5 text-slate-300 text-lg pt-1">
+                    <a href="https://www.facebook.com/Genuss.ng" target="_blank" rel="noopener noreferrer" title="Facebook GENUSS.ng" class="hover:text-genuss-gold"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@genussinvestmentlimited1" target="_blank" rel="noopener noreferrer" title="TikTok @genussinvestmentlimited1" class="hover:text-genuss-gold"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/genuss.ng/" target="_blank" rel="noopener noreferrer" title="Instagram @genuss.ng" class="hover:text-genuss-gold"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/2348033057945" target="_blank" rel="noopener noreferrer" title="WhatsApp GENUSS" class="hover:text-genuss-gold"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-sm">Contact Lagos Office</h4>
+                <p class="mb-2 leading-relaxed"><i class="fa-solid fa-location-dot text-genuss-gold mr-1.5"></i> Ikeja / Lekki Express, Lagos State, Nigeria</p>
+                <p class="mb-2"><i class="fa-solid fa-phone text-genuss-gold mr-1.5"></i> 08033057945</p>
+                <p><i class="fa-solid fa-envelope text-genuss-gold mr-1.5"></i> genuss@genuss.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-sm">Official Social Handles</h4>
+                <p class="mb-2"><strong>Facebook:</strong> <a href="https://www.facebook.com/Genuss.ng" target="_blank" class="hover:text-genuss-gold">Genuss.ng</a></p>
+                <p class="mb-2"><strong>TikTok:</strong> <a href="https://www.tiktok.com/@genussinvestmentlimited1" target="_blank" class="hover:text-genuss-gold">@genussinvestmentlimited1</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/genuss.ng/" target="_blank" class="hover:text-genuss-gold">@genuss.ng</a></p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-sm">GENUSS Guarantees</h4>
+                <ul class="space-y-1.5">
+                    <li><i class="fa-solid fa-shield-halved text-green-400 mr-1.5"></i> Official Manufacturer Warranty</li>
+                    <li><i class="fa-solid fa-rotate-left text-green-400 mr-1.5"></i> 90-Day Return & Replacement Support</li>
+                    <li><i class="fa-solid fa-lock text-green-400 mr-1.5"></i> 100% Protected Secure Payment</li>
+                    <li><i class="fa-solid fa-screwdriver-wrench text-green-400 mr-1.5"></i> Certified Solar Installation Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 border-t border-slate-900 text-center text-slate-500">
+            &copy; 2026 GENUSS Electronics & Solar Energy Limited. All rights reserved. Black Friday Slogan "It's Black Friday - Freed From Desire".
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- 15. JAVASCRIPT APPLICATION LOGIC           -->
+    <!-- ========================================== -->
+    <script>
+        // --- COMPLETE PRODUCT DATABASE ---
+        const products = [
+            {
+                id: 1,
+                name: "Eastman 220Ah Tubular + Sukam 1kVA Combo",
+                tier: "starter",
+                price: 487740,
+                originalPrice: 575000,
+                badge: "STARTER DEAL",
+                badgeBg: "bg-emerald-600 text-white",
+                powers: ["TV", "Standing Fans (2x)", "Lighting", "Laptops", "300W Small Refrigerator", "Phones & Routers"],
+                specs: [
+                    "Eastman 220Ah Tall Tubular Solar Battery",
+                    "Sukam 1kVA Pure Sine Wave Inverter",
+                    "40A MPPT / PWM Charge Controller",
+                    "2 Units 330W High-Efficiency Solar Panels"
+                ],
+                deliveryNote: "FREE Delivery within Lagos & Ibadan!",
+                imageType: "starter",
+                featured: true,
+                description: "A dependable plug-and-play backup package designed for apartments, homes, and small commercial stores. Keeps everyday essentials running smoothly while daily solar charging helps drastically reduce generator use.",
+                rating: 4.8,
+                reviewCount: 34,
+                reviews: [
+                    { name: "Chinedu O.", date: "2 weeks ago", text: "The installation team in Lekki was quick and the system handles our TV, 2 fans, lights, and small fridge exactly as promised." },
+                    { name: "Amina K.", date: "1 month ago", text: "Clear advice before I ordered and excellent battery performance during outages. Very happy!" }
+                ]
+            },
+            {
+                id: 2,
+                name: "DEYE 12kW Three-Phase Hybrid + 16kWh Lithium System",
+                tier: "luxury",
+                price: 7662000,
+                originalPrice: 8500000,
+                badge: "LUXURY ENTERPRISE",
+                badgeBg: "bg-genuss-gold text-black",
+                powers: ["Whole Mansion", "Multiple Inverter ACs", "Water Pumping Machines", "Electric Vehicle Charging", "Heavy Equipment"],
+                specs: [
+                    "DEYE 12kW Three-Phase Low Voltage Hybrid Inverter",
+                    "DEYE 16kWh LiFePO4 High-Capacity Lithium Battery Bank",
+                    "14 Units 615W Jinko Monocrystalline Solar Panels",
+                    "Smart Energy Cloud WiFi Monitoring & App Integration"
+                ],
+                deliveryNote: "Priority White-Glove Installation Included",
+                imageType: "luxury",
+                featured: true,
+                description: "A high-capacity, heavy-duty hybrid solar setup engineered for large residences, multi-story duplexes, commercial offices, and industrial clinics. Real-time smartphone monitoring gives full visibility over power generation and storage.",
+                rating: 4.9,
+                reviewCount: 18,
+                reviews: [
+                    { name: "Tunde A.", date: "3 weeks ago", text: "White-glove installation was extremely professional. Powers three 1.5HP ACs and our deep freezer with zero stress." },
+                    { name: "Ifeoma N.", date: "2 months ago", text: "Excellent capacity for our office building in VI. The DEYE app makes monitoring battery level so easy." }
+                ]
+            },
+            {
+                id: 3,
+                name: "Felicity 5kVA 48V Hybrid + 10kWh Lithium Pack",
+                tier: "mid",
+                price: 2450000,
+                originalPrice: 2800000,
+                badge: "FAMILY STANDARD",
+                badgeBg: "bg-amber-600 text-white",
+                powers: ["Refrigerators & Freezers", "1.5HP Inverter AC", "Washing Machine", "All LED Lighting & TVs", "Pumping Machine"],
+                specs: [
+                    "Felicity 5kVA 48V Pure Sine Hybrid Inverter",
+                    "Felicity 10kWh Wall-Mount LiFePO4 Lithium Battery (6000 cycles)",
+                    "6 Units 550W Half-Cell Monocrystalline Solar Panels"
+                ],
+                deliveryNote: "FREE Delivery Nationwide Promo",
+                imageType: "lithium_mid",
+                featured: true,
+                description: "A perfectly balanced family power solution for reliable daily backup. The hybrid inverter and lithium battery bank provide quiet, highly efficient power for home appliances, cooling, and entertainment without generator noise.",
+                rating: 4.8,
+                reviewCount: 27,
+                reviews: [
+                    { name: "Bola R.", date: "1 week ago", text: "It powers our refrigerator, washing machine, and 1.5HP AC without any drama. The best investment we made this year." },
+                    { name: "David E.", date: "6 weeks ago", text: "Exceptional value. Delivery to Ibadan arrived safely and installation was clean." }
+                ]
+            },
+            {
+                id: 4,
+                name: "DEYE 5kW Hybrid Inverter + Felicity 5kWh Lithium Combo",
+                tier: "mid",
+                price: 1750000,
+                originalPrice: 1980000,
+                badge: "POPULAR COMBO",
+                badgeBg: "bg-blue-600 text-white",
+                powers: ["1HP Inverter AC", "Double-Door Refrigerator", "55-inch TV & Soundbar", "Laptops & Lighting"],
+                specs: [
+                    "DEYE 5kW Single Phase Hybrid Inverter (Sun-5K-SG03LP1)",
+                    "Felicity 5kWh 48V LiFePO4 Lithium Battery",
+                    "Built-in Dual MPPT Solar Tracking"
+                ],
+                deliveryNote: "Fast Lagos Dispatch Available",
+                imageType: "inverter",
+                featured: false,
+                description: "An advanced, smart hybrid power system that blends solar energy, battery power, and grid electricity with seamless 4ms auto-switchover. Never notice power outages again.",
+                rating: 4.8,
+                reviewCount: 22,
+                reviews: [
+                    { name: "Emeka N.", date: "2 weeks ago", text: "The automatic switching is instant. The touch LCD display makes it very easy to check generator and solar inputs." },
+                    { name: "Sarah T.", date: "1 month ago", text: "Very compact wall installation. Runs our home essentials smoothly." }
+                ]
+            },
+            {
+                id: 5,
+                name: "Basic Apartment 1.5kVA Solar Starter Kit",
+                tier: "starter",
+                price: 680000,
+                originalPrice: 790000,
+                badge: "BUDGET SAVER",
+                badgeBg: "bg-emerald-600 text-white",
+                powers: ["Lighting", "Standing Fans", "Laptops & Routers", "Decoder & 43\" TV"],
+                specs: [
+                    "1.5kVA 12V Pure Sine Wave Inverter",
+                    "200Ah Deep Cycle Gel / Tubular Battery",
+                    "2x 300W Solar Panels with Mounting Kit"
+                ],
+                deliveryNote: "Free Lagos Shipping",
+                imageType: "starter",
+                featured: false,
+                description: "An accessible starter solar setup for studio apartments, 2-bedroom flats, and smaller spaces. Covers essential lighting, fans, laptops, and entertainment with clean, quiet backup power.",
+                rating: 4.5,
+                reviewCount: 16,
+                reviews: [
+                    { name: "Femi A.", date: "5 days ago", text: "A simple starter system that does exactly what I needed for my remote work setup." },
+                    { name: "Ngozi C.", date: "3 weeks ago", text: "The GENUSS team explained everything clearly and delivery around Lagos was prompt." }
+                ]
+            },
+            {
+                id: 6,
+                name: "Luminous 220Ah 12V Tall Tubular Battery",
+                tier: "batteries",
+                price: 245000,
+                originalPrice: 280000,
+                badge: "TOP BATTERY DEAL",
+                badgeBg: "bg-cyan-600 text-white",
+                powers: ["Deep Cycle Backup", "Long Life Inverter Systems"],
+                specs: [
+                    "220Ah Capacity @ C20 Rating",
+                    "Spine Alloy Tubular Plate Technology",
+                    "Ultra Low Maintenance Float Indicators",
+                    "18-Month Replacement Warranty"
+                ],
+                deliveryNote: "In-Stock at Lagos Warehouse",
+                imageType: "battery",
+                featured: false,
+                description: "A heavy-duty deep-cycle tubular battery built for rigorous Nigerian grid conditions and long backup life. High acid volume per ampere-hour ensures exceptional thermal management.",
+                rating: 4.7,
+                reviewCount: 41,
+                reviews: [
+                    { name: "Musa Y.", date: "4 days ago", text: "Battery arrived well packaged and holds charge throughout the night." },
+                    { name: "Grace P.", date: "3 weeks ago", text: "The warranty gives total peace of mind. Excellent customer service from GENUSS." }
+                ]
+            },
+            {
+                id: 7,
+                name: "Eastman 220Ah 12V Heavy Duty Solar Tubular Battery",
+                tier: "batteries",
+                price: 265000,
+                originalPrice: 305000,
+                badge: "PREMIUM TUBULAR",
+                badgeBg: "bg-cyan-700 text-white",
+                powers: ["Heavy Inverter Loads", "High Cycle Solar Systems"],
+                specs: [
+                    "220Ah / 12V C10 Heavy Solar Duty",
+                    "High Acid Volume per Ampere-Hour",
+                    "Extended 24-Month Warranty Support"
+                ],
+                deliveryNote: "Free Delivery in Lagos on 2+ units",
+                imageType: "battery",
+                featured: false,
+                description: "Engineered specifically for demanding solar backup systems. High antimony alloy formulation provides robust resistance to corrosion and ensures lasting cycling durability.",
+                rating: 4.9,
+                reviewCount: 31,
+                reviews: [
+                    { name: "Kunle B.", date: "1 week ago", text: "I bought four units to upgrade my 5kVA system. They charge fast and last remarkably well." }
+                ]
+            },
+            {
+                id: 8,
+                name: "Felicity 10kWh 48V LiFePO4 Wall-Mount Lithium Battery",
+                tier: "batteries",
+                price: 1650000,
+                originalPrice: 1890000,
+                badge: "LITHIUM STORAGE",
+                badgeBg: "bg-purple-600 text-white",
+                powers: ["Residential Energy Storage", "Heavy AC & Motor Loads"],
+                specs: [
+                    "10kWh 48V Nominal Capacity (200Ah)",
+                    "Grade-A LiFePO4 Lithium Cells",
+                    "Smart BMS with CAN/RS485 Communication",
+                    "6,000+ Cycles (10+ Year Design Life)"
+                ],
+                deliveryNote: "Nationwide Safe Transport Guaranteed",
+                imageType: "lithium_mid",
+                featured: false,
+                description: "Top-tier lithium iron phosphate wall-mounted battery. Compact, sleek, wall-mountable, maintenance-free, and compatible with DEYE, Felicity, Growatt, and Victron hybrid inverters.",
+                rating: 4.9,
+                reviewCount: 29,
+                reviews: [
+                    { name: "Olamide S.", date: "2 weeks ago", text: "Replaced 8 old tubular batteries with just one of this wall-mount unit. Saved massive floor space and charges in under 3 hours." }
+                ]
+            }
+        ];
+
+        // --- APPLIANCE LOAD CALCULATOR CONFIG ---
+        const appliances = [
+            { id: "lights", name: "LED Bulbs (5-pack)", watts: 50, icon: "fa-lightbulb", count: 1 },
+            { id: "tv", name: "Smart LED TV (up to 55\")", watts: 100, icon: "fa-tv", count: 1 },
+            { id: "fan", name: "Standing Fans (2x)", watts: 120, icon: "fa-fan", count: 1 },
+            { id: "laptop", name: "Laptops & WiFi Router", watts: 150, icon: "fa-laptop", count: 1 },
+            { id: "fridge", name: "Medium Refrigerator", watts: 300, icon: "fa-kitchen-set", count: 0 },
+            { id: "freezer", name: "Deep Chest Freezer", watts: 600, icon: "fa-box", count: 0 },
+            { id: "ac1", name: "1HP Inverter AC", watts: 900, icon: "fa-snowflake", count: 0 },
+            { id: "ac2", name: "1.5HP - 2HP Inverter AC", watts: 1800, icon: "fa-temperature-arrow-down", count: 0 },
+            { id: "pump", name: "Water Pumping Machine", watts: 1200, icon: "fa-faucet-drip", count: 0 },
+            { id: "washer", name: "Automatic Washing Machine", watts: 500, icon: "fa-soap", count: 0 }
+        ];
+
+        let activeApplianceSelection = {
+            lights: true,
+            tv: true,
+            fan: true,
+            laptop: true
+        };
+
+        let currentFilter = 'all';
+        let flashDealIndex = 0;
+        const flashDealDurationSeconds = 4 * 60 * 60;
+        let flashDealSecondsRemaining = flashDealDurationSeconds;
+        let flashDealTimerId;
+        const WHATSAPP_OPERATOR_NUMBER = '2348033057945';
+
+        // --- INITIALIZATION ---
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            updateTierCountBadges();
+            renderApplianceCalculator();
+            startDealTicker();
+            startFlashDeals();
+            updateFuelSavings();
+            startSocialProofToast();
+        });
+
+        function updateTierCountBadges() {
+            document.getElementById('count-all').textContent = `(${products.length})`;
+            document.getElementById('count-starter').textContent = `(${products.filter(p => p.tier === 'starter').length})`;
+            document.getElementById('count-mid').textContent = `(${products.filter(p => p.tier === 'mid').length})`;
+            document.getElementById('count-luxury').textContent = `(${products.filter(p => p.tier === 'luxury').length})`;
+            document.getElementById('count-batteries').textContent = `(${products.filter(p => p.tier === 'batteries').length})`;
+        }
+
+        // --- LIVE TICKER ---
+        function startDealTicker() {
+            const ticker = document.getElementById('dealTicker');
+            const featuredProducts = products.filter(product => product.featured);
+            let currentIndex = 0;
+
+            if (!ticker || featuredProducts.length === 0) return;
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % featuredProducts.length;
+                const product = featuredProducts[currentIndex];
+                ticker.classList.remove('deal-ticker');
+                void ticker.offsetWidth;
+                ticker.textContent = `${product.name} is a featured Black Friday deal (₦${product.price.toLocaleString()})`;
+                ticker.classList.add('deal-ticker');
+            }, 4000);
+        }
+
+        // --- FLASH DEALS SECTION ---
+        function getFlashDealsList() {
+            return products.filter(product => product.originalPrice > product.price);
+        }
+
+        function startFlashDeals() {
+            const flashDeals = getFlashDealsList();
+            if (flashDeals.length === 0) return;
+
+            renderFlashDeal(flashDeals[flashDealIndex]);
+            updateFlashDealTimer();
+            flashDealTimerId = setInterval(() => {
+                flashDealSecondsRemaining -= 1;
+                updateFlashDealTimer();
+
+                if (flashDealSecondsRemaining <= 0) {
+                    flashDealIndex = (flashDealIndex + 1) % flashDeals.length;
+                    flashDealSecondsRemaining = flashDealDurationSeconds;
+                    renderFlashDeal(flashDeals[flashDealIndex]);
+                }
+            }, 1000);
+        }
+
+        function prevFlashDeal() {
+            const list = getFlashDealsList();
+            flashDealIndex = (flashDealIndex - 1 + list.length) % list.length;
+            renderFlashDeal(list[flashDealIndex]);
+        }
+
+        function nextFlashDeal() {
+            const list = getFlashDealsList();
+            flashDealIndex = (flashDealIndex + 1) % list.length;
+            renderFlashDeal(list[flashDealIndex]);
+        }
+
+        function renderFlashDeal(product) {
+            const image = document.getElementById('flashDealImage');
+            const card = document.getElementById('flashDealCard');
+            const imageSource = getProductImageSource(product);
+
+            image.src = imageSource;
+            image.onerror = () => {
+                image.onerror = null;
+                image.src = generateProductImage(product.imageType);
+            };
+            image.alt = product.name;
+            
+            const discount = getDiscountPercentage(product);
+            const savings = product.originalPrice - product.price;
+
+            document.getElementById('flashDealBadge').textContent = `${product.badge} · FLASH DEAL`;
+            document.getElementById('flashDealSavings').textContent = `SAVE ₦${savings.toLocaleString()} (${discount}% OFF)`;
+            document.getElementById('flashDealName').textContent = product.name;
+            document.getElementById('flashDealDesc').textContent = product.description;
+            document.getElementById('flashDealPrice').textContent = `₦${product.price.toLocaleString()}`;
+            document.getElementById('flashDealOriginalPrice').textContent = `₦${product.originalPrice.toLocaleString()}`;
+            
+            card.onclick = () => openProductDetails(product.id);
+            card.onkeydown = event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openProductDetails(product.id);
+                }
+            };
+            document.getElementById('flashDealOrderButton').onclick = event => {
+                event.stopPropagation();
+                contactOnWhatsApp(product.id);
+            };
+            document.getElementById('flashDealDetailsButton').onclick = event => {
+                event.stopPropagation();
+                openProductDetails(product.id);
+            };
+
+            card.classList.remove('flash-deal-card');
+            void card.offsetWidth;
+            card.classList.add('flash-deal-card');
+        }
+
+        function updateFlashDealTimer() {
+            const hours = Math.floor(flashDealSecondsRemaining / 3600).toString().padStart(2, '0');
+            const minutes = Math.floor((flashDealSecondsRemaining % 3600) / 60).toString().padStart(2, '0');
+            const seconds = (flashDealSecondsRemaining % 60).toString().padStart(2, '0');
+            document.getElementById('flashDealTimer').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // --- FUEL SAVINGS CALCULATOR LOGIC ---
+        function updateFuelSavings() {
+            const monthlyFuel = parseInt(document.getElementById('fuelSlider').value, 10);
+            document.getElementById('fuelMonthlyDisplay').textContent = `₦${monthlyFuel.toLocaleString()} / mo`;
+
+            const annualCost = monthlyFuel * 12;
+            const threeYearCost = annualCost * 3;
+            document.getElementById('fuel1Year').textContent = `₦${annualCost.toLocaleString()}`;
+            document.getElementById('fuel3Year').textContent = `₦${threeYearCost.toLocaleString()}`;
+
+            let hoursText = '~4 to 6 hrs/day';
+            let serviceText = `~₦${Math.round(annualCost * 0.1).toLocaleString()}/yr`;
+            let payback = '~12 - 16 Months';
+
+            if (monthlyFuel <= 60000) {
+                hoursText = '~3 to 4 hrs/day';
+                payback = '~10 - 14 Months';
+            } else if (monthlyFuel <= 150000) {
+                hoursText = '~5 to 8 hrs/day';
+                payback = '~12 - 16 Months';
+            } else if (monthlyFuel <= 300000) {
+                hoursText = '~9 to 14 hrs/day';
+                payback = '~8 - 12 Months';
+            } else {
+                hoursText = '~14 to 20+ hrs/day';
+                payback = '~6 - 9 Months';
+            }
+
+            document.getElementById('genHoursDisplay').textContent = hoursText;
+            document.getElementById('genServiceDisplay').textContent = serviceText;
+            document.getElementById('paybackTimeline').textContent = payback;
+        }
+
+        // --- AD MODAL LOGIC ---
+        function closeAdModal() {
+            const overlay = document.getElementById('adModalOverlay');
+            overlay.classList.add('opacity-0');
+            document.body.classList.remove('overflow-hidden');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        function openAdModal() {
+            const overlay = document.getElementById('adModalOverlay');
+            overlay.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            setTimeout(() => {
+                overlay.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function handleAdBackdropClick(event) {
+            if (event.target === document.getElementById('adModalOverlay')) {
+                closeAdModal();
+            }
+        }
+
+        // --- MODAL BACKDROP CLICK HANDLERS ---
+        function handleCalculatorBackdropClick(event) {
+            if (event.target === document.getElementById('calculatorModal')) {
+                toggleCalculator();
+            }
+        }
+
+        function handleDetailBackdropClick(event) {
+            if (event.target === document.getElementById('productDetailModal')) {
+                closeProductDetails();
+            }
+        }
+
+        function handleConsultationBackdropClick(event) {
+            if (event.target === document.getElementById('consultationModal')) {
+                closeConsultationModal();
+            }
+        }
+
+        // Keyboard navigation Escape handler
+        document.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+
+            if (!document.getElementById('productDetailModal').classList.contains('hidden')) {
+                closeProductDetails();
+            } else if (!document.getElementById('calculatorModal').classList.contains('hidden')) {
+                toggleCalculator();
+            } else if (!document.getElementById('consultationModal').classList.contains('hidden')) {
+                closeConsultationModal();
+            } else if (!document.getElementById('adModalOverlay').classList.contains('hidden')) {
+                closeAdModal();
+            }
+        });
+
+        // Back to top scroll listener
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            const isVisible = window.scrollY > 500;
+            backToTop.classList.toggle('opacity-0', !isVisible);
+            backToTop.classList.toggle('translate-y-4', !isVisible);
+            backToTop.classList.toggle('pointer-events-none', !isVisible);
+        }, { passive: true });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // --- SVG GRAPHICS GENERATOR ---
+        function generateProductImage(imageType) {
+            if (imageType === 'inverter') {
+                return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+                        <defs>
+                            <linearGradient id="invBg" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#04282A"/>
+                                <stop offset="100%" stop-color="#0a192f"/>
+                            </linearGradient>
+                            <linearGradient id="lcd" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#022c22"/>
+                                <stop offset="100%" stop-color="#064e3b"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="500" fill="url(#invBg)"/>
+                        <!-- Inverter Body -->
+                        <rect x="230" y="80" width="340" height="340" rx="20" fill="#1e293b" stroke="#D4AF37" stroke-width="4"/>
+                        <rect x="250" y="100" width="300" height="40" rx="8" fill="#0f172a"/>
+                        <text x="400" y="127" text-anchor="middle" fill="#D4AF37" font-family="Arial,sans-serif" font-size="20" font-weight="900" letter-spacing="4">GENUSS HYBRID INVERTER</text>
+                        <!-- LCD Screen -->
+                        <rect x="290" y="160" width="220" height="120" rx="12" fill="url(#lcd)" stroke="#10b981" stroke-width="2"/>
+                        <text x="400" y="200" text-anchor="middle" fill="#34d399" font-family="monospace" font-size="24" font-weight="700">5.0 kW AC</text>
+                        <text x="400" y="235" text-anchor="middle" fill="#a7f3d0" font-family="monospace" font-size="14">SOLAR: 230V | BATT: 51.2V</text>
+                        <text x="400" y="260" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="12">STATUS: PURE SINE NORMAL</text>
+                        <!-- Heat sink grill -->
+                        <line x1="270" y1="315" x2="530" y2="315" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="270" y1="335" x2="530" y2="335" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="270" y1="355" x2="530" y2="355" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+                        <circle cx="280" cy="390" r="8" fill="#10b981"/>
+                        <circle cx="310" cy="390" r="8" fill="#f59e0b"/>
+                        <circle cx="340" cy="390" r="8" fill="#ef4444"/>
+                    </svg>
+                `)}`;
+            } else if (imageType === 'battery') {
+                return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+                        <defs>
+                            <linearGradient id="battBg" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#04282A"/>
+                                <stop offset="100%" stop-color="#020617"/>
+                            </linearGradient>
+                            <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#1e293b"/>
+                                <stop offset="50%" stop-color="#334155"/>
+                                <stop offset="100%" stop-color="#1e293b"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="500" fill="url(#battBg)"/>
+                        <!-- Tall Tubular Battery Casing -->
+                        <rect x="250" y="110" width="300" height="320" rx="16" fill="url(#bodyGrad)" stroke="#38bdf8" stroke-width="4"/>
+                        <!-- Top Lid -->
+                        <rect x="235" y="80" width="330" height="40" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="3"/>
+                        <!-- Terminals & Float Plugs -->
+                        <rect x="270" y="55" width="30" height="30" rx="4" fill="#dc2626"/>
+                        <rect x="500" y="55" width="30" height="30" rx="4" fill="#1e293b"/>
+                        <circle cx="350" cy="98" r="9" fill="#e2e8f0"/>
+                        <circle cx="390" cy="98" r="9" fill="#e2e8f0"/>
+                        <circle cx="420" cy="98" r="9" fill="#e2e8f0"/>
+                        <circle cx="450" cy="98" r="9" fill="#e2e8f0"/>
+                        <!-- Brand Label -->
+                        <rect x="280" y="160" width="240" height="130" rx="12" fill="#0284c7"/>
+                        <text x="400" y="210" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="900">220Ah / 12V</text>
+                        <text x="400" y="240" text-anchor="middle" fill="#e0f2fe" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">DEEP CYCLE TUBULAR</text>
+                        <text x="400" y="265" text-anchor="middle" fill="#fed7aa" font-family="Arial,sans-serif" font-size="13" font-weight="700">HEAVY DUTY SOLAR POWER</text>
+                        <!-- Handle -->
+                        <path d="M 320 80 Q 400 35 480 80" fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                `)}`;
+            } else if (imageType === 'lithium_mid') {
+                return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+                        <defs>
+                            <linearGradient id="liBg" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#04282A"/>
+                                <stop offset="100%" stop-color="#1e1b4b"/>
+                            </linearGradient>
+                            <linearGradient id="wallBox" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1e293b"/>
+                                <stop offset="100%" stop-color="#0f172a"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="800" height="500" fill="url(#liBg)"/>
+                        <!-- Wall Mounted Lithium Unit -->
+                        <rect x="250" y="80" width="300" height="340" rx="24" fill="url(#wallBox)" stroke="#c084fc" stroke-width="4"/>
+                        <rect x="280" y="110" width="240" height="50" rx="8" fill="#312e81"/>
+                        <text x="400" y="142" text-anchor="middle" fill="#f3e8ff" font-family="Arial,sans-serif" font-size="18" font-weight="900" letter-spacing="3">10kWh LiFePO4</text>
+                        <!-- LED State of Charge Bar -->
+                        <rect x="300" y="185" width="200" height="24" rx="12" fill="#0f172a" stroke="#6b21a8" stroke-width="2"/>
+                        <rect x="304" y="189" width="160" height="16" rx="8" fill="#10b981"/>
+                        <text x="400" y="240" text-anchor="middle" fill="#c084fc" font-family="Arial,sans-serif" font-size="15" font-weight="700">6,000+ CYCLES @ 90% DOD</text>
+                        <text x="400" y="265" text-anchor="middle" fill="#94a3b8" font-family="Arial,sans-serif" font-size="13">WALL MOUNTED POWERWALL</text>
+                        <rect x="330" y="300" width="140" height="40" rx="8" fill="#581c87"/>
+                        <text x="400" y="325" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">SMART BMS</text>
+                    </svg>
+                `)}`;
+            } else if (imageType === 'luxury') {
+                return 'assets/top-seller-luxury.png';
+            } else {
+                return 'assets/top-seller-starter.png';
+            }
+        }
+
+        function getDiscountPercentage(product) {
+            if (!product.originalPrice || product.originalPrice <= product.price) return 0;
+            return Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+        }
+
+        function getProductImageSource(product) {
+            if (product.imageType === 'starter') return 'assets/top-seller-starter.png';
+            if (product.imageType === 'luxury') return 'assets/top-seller-luxury.png';
+            return generateProductImage(product.imageType);
+        }
+
+        function renderStars(rating) {
+            return Array.from({ length: 5 }, (_, index) =>
+                `<i class="fa-solid fa-star ${index < Math.round(rating) ? 'text-genuss-gold' : 'text-slate-700'}"></i>`
+            ).join('');
+        }
+
+        // --- PRODUCT DETAIL MODAL ---
+        function openProductDetails(productId) {
+            const product = products.find(item => item.id === productId);
+            if (!product) return;
+
+            const modal = document.getElementById('productDetailModal');
+            const imageContainer = document.getElementById('productDetailImage');
+            imageContainer.innerHTML = `<img src="${getProductImageSource(product)}" alt="${product.name}" class="h-full w-full object-cover">`;
+            const image = imageContainer.querySelector('img');
+            image.onerror = () => {
+                image.onerror = null;
+                image.src = generateProductImage(product.imageType);
+            };
+
+            const discount = getDiscountPercentage(product);
+            const savings = product.originalPrice ? product.originalPrice - product.price : 0;
+
+            document.getElementById('productDetailBadge').className = `inline-flex rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-wider ${product.badgeBg}`;
+            document.getElementById('productDetailBadge').textContent = product.badge;
+            
+            const savingsPill = document.getElementById('productDetailSavings');
+            if (discount > 0) {
+                savingsPill.textContent = `SAVE ₦${savings.toLocaleString()} (${discount}% OFF)`;
+                savingsPill.classList.remove('hidden');
+            } else {
+                savingsPill.classList.add('hidden');
+            }
+
+            document.getElementById('productDetailTitle').textContent = product.name;
+            document.getElementById('productDetailRating').innerHTML = `${renderStars(product.rating)} <span class="text-sm font-bold text-white">${product.rating}/5</span><span class="text-xs text-slate-400">Based on ${product.reviewCount} verified reviews</span>`;
+            document.getElementById('productDetailDescription').textContent = product.description;
+            document.getElementById('productDetailPrice').textContent = `₦${product.price.toLocaleString()}`;
+            document.getElementById('productDetailOriginalPrice').textContent = product.originalPrice ? `₦${product.originalPrice.toLocaleString()}` : '';
+            document.getElementById('productDetailSpecs').innerHTML = product.specs.map(spec => `<div class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check mt-1 text-emerald-400 text-xs"></i><span>${spec}</span></div>`).join('');
+            document.getElementById('productDetailPowers').innerHTML = product.powers.map(power => `<span class="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1 text-xs text-slate-300">${power}</span>`).join('');
+            document.getElementById('productDetailReviewSummary').innerHTML = `<div class="text-2xl font-black text-genuss-gold">${product.rating}/5</div><div class="text-xs text-slate-400">${product.reviewCount} customer ratings</div>`;
+            
+            document.getElementById('productDetailReviews').innerHTML = product.reviews.map(review => `
+                <article class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="font-bold text-white text-xs sm:text-sm">${review.name}</div>
+                        <div class="text-xs text-genuss-gold">${renderStars(5)}</div>
+                    </div>
+                    <p class="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-300">"${review.text}"</p>
+                    <div class="mt-2.5 text-[10px] uppercase tracking-wider text-slate-500">${review.date} · Verified Buyer</div>
+                </article>
+            `).join('');
+
+            document.getElementById('productDetailOrderButton').onclick = () => {
+                contactOnWhatsApp(product.id);
+                closeProductDetails();
+            };
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            modal.scrollTop = 0;
+        }
+
+        function closeProductDetails() {
+            document.getElementById('productDetailModal').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // --- RENDER PRODUCTS GRID ---
+        function renderProducts(items) {
+            const container = document.getElementById('productGrid');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-16 text-slate-400 bg-slate-900/60 rounded-3xl border border-slate-800 p-8">
+                        <i class="fa-solid fa-magnifying-glass text-5xl mb-4 text-slate-600"></i>
+                        <p class="text-xl font-bold text-white">No solar packages matched your search.</p>
+                        <p class="mt-2 text-sm text-slate-400">Try searching for other keywords like "AC", "battery", "starter", "fridge", or reset filters.</p>
+                        <button onclick="clearProductSearch()" class="mt-5 px-6 py-3 rounded-xl gold-gradient-bg text-black text-xs font-black uppercase tracking-wider">View All Available Deals</button>
+                    </div>
+                `;
+                return;
+            }
+
+            items.forEach(product => {
+                const formattedPrice = "₦" + product.price.toLocaleString();
+                const formattedOrig = product.originalPrice ? "₦" + product.originalPrice.toLocaleString() : "";
+                const discountPercentage = getDiscountPercentage(product);
+                const imgSrc = getProductImageSource(product);
+
+                const cardHTML = `
+                    <div id="card-product-${product.id}" class="product-card w-full min-w-0 max-w-full overflow-hidden h-full bg-slate-900/95 border border-slate-800 hover:border-genuss-gold/70 rounded-3xl p-5 sm:p-6 flex flex-col hover:-translate-y-1.5 shadow-xl cursor-pointer" role="button" tabindex="0" aria-label="View details for ${product.name}" onclick="openProductDetails(${product.id})" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openProductDetails(${product.id}); }">
+                        <div class="flex-1">
+                            <!-- Header Info -->
+                            <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="text-[10px] font-black px-3 py-1 rounded-full ${product.badgeBg}">${product.badge}</span>
+                                    ${product.featured ? `<span class="text-[10px] font-bold text-red-300 bg-red-950/80 border border-red-800/80 px-2 py-0.5 rounded-full"><i class="fa-solid fa-fire mr-1 text-yellow-400"></i>Trending</span>` : ''}
+                                </div>
+                                ${discountPercentage ? `<span class="shrink-0 text-xs text-red-400 font-black bg-red-950/70 border border-red-800 px-2 py-0.5 rounded-lg">${discountPercentage}% OFF</span>` : ''}
+                            </div>
+
+                            <!-- Product Image Container -->
+                            <div class="w-full h-56 sm:h-64 bg-slate-950 rounded-2xl overflow-hidden relative border border-slate-800/80 mb-4 flex items-center justify-center">
+                                <img src="${imgSrc}" alt="${product.name}" onerror="this.onerror=null; this.src=generateProductImage('${product.imageType}')" class="w-full h-full object-cover">
+                            </div>
+
+                            <h3 class="font-heading font-black text-lg text-white mb-2 leading-snug">${product.name}</h3>
+                            <div class="mb-3 flex items-center gap-1 text-xs font-bold text-genuss-gold">
+                                ${renderStars(product.rating)}
+                                <span class="ml-1.5 text-slate-400">${product.rating}/5 · ${product.reviewCount} reviews</span>
+                            </div>
+
+                            <!-- Specs List -->
+                            ${product.specs && product.specs.length ? `
+                                <div class="bg-black/50 p-3.5 rounded-xl border border-slate-800/80 mb-4 space-y-1.5 text-xs">
+                                    <div class="text-[10px] text-genuss-gold font-bold uppercase tracking-wider mb-1">Included System Components:</div>
+                                    ${product.specs.map(spec => `<div class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i><span>${spec}</span></div>`).join('')}
+                                </div>
+                            ` : ''}
+
+                            <!-- Appliance Capabilities -->
+                            ${product.powers && product.powers.length ? `
+                                <div class="mb-4">
+                                    <div class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1.5">Powers Appliances Like:</div>
+                                    <div class="flex flex-wrap gap-1.5">
+                                        ${product.powers.map(p => `<span class="bg-slate-800/90 text-slate-300 text-[10px] px-2.5 py-1 rounded-md border border-slate-700">${p}</span>`).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                        </div>
+
+                        <!-- Price & CTA -->
+                        <div class="pt-4 border-t border-slate-800 space-y-3">
+                            <div class="flex items-start justify-between gap-2">
+                                <div>
+                                    <span class="product-price block text-xl sm:text-2xl font-black text-genuss-gold">${formattedPrice}</span>
+                                    ${formattedOrig ? `<span class="block text-xs text-slate-500 line-through">${formattedOrig}</span>` : ''}
+                                </div>
+                                ${product.deliveryNote ? `<span class="text-[10px] text-right text-emerald-400 font-semibold bg-emerald-950/50 border border-emerald-900/60 px-2 py-1 rounded max-w-[50%] leading-tight">${product.deliveryNote}</span>` : ''}
+                            </div>
+
+                            <button onclick="event.stopPropagation(); contactOnWhatsApp(${product.id})" class="w-full py-3 rounded-xl bg-green-600 text-white font-black uppercase text-xs tracking-wider hover:bg-green-500 active:scale-98 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-950/50">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Contact on WhatsApp
+                            </button>
+                            <button onclick="event.stopPropagation(); openProductDetails(${product.id})" class="w-full py-2 text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-genuss-gold transition-colors">
+                                View full specifications <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += cardHTML;
+            });
+        }
+
+        // --- CATEGORY / TIER FILTERING ---
+        function setCategoryFilter(tier) {
+            currentFilter = tier;
+            
+            // Toggle active button tab styles
+            document.querySelectorAll('.tier-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-genuss-gold', 'text-black', 'shadow-md');
+                btn.classList.add('bg-slate-900', 'text-slate-300');
+            });
+
+            const activeBtn = document.getElementById(`tab-${tier}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-slate-900', 'text-slate-300');
+                activeBtn.classList.add('bg-genuss-gold', 'text-black', 'shadow-md');
+            }
+
+            filterAndRender();
+        }
+
+        function handleSearchInput(event) {
+            const query = event.target.value;
+            // Synchronize both inputs
+            document.getElementById('searchInput').value = query;
+            document.getElementById('searchInputMobile').value = query;
+            filterAndRender();
+        }
+
+        function filterAndRender() {
+            const query = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+            
+            let filtered = products;
+
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(p => p.tier === currentFilter);
+            }
+
+            if (query) {
+                filtered = filtered.filter(p => 
+                    p.name.toLowerCase().includes(query) || 
+                    p.description.toLowerCase().includes(query) ||
+                    p.specs.some(s => s.toLowerCase().includes(query)) ||
+                    p.powers.some(pw => pw.toLowerCase().includes(query))
+                );
+            }
+
+            renderProducts(filtered);
+        }
+
+        function clearProductSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('searchInputMobile').value = '';
+            setCategoryFilter('all');
+        }
+
+        // --- APPLIANCE CALCULATOR LOGIC ---
+        function renderApplianceCalculator() {
+            const container = document.getElementById('applianceList');
+            container.innerHTML = '';
+
+            appliances.forEach(app => {
+                const isSelected = !!activeApplianceSelection[app.id];
+                const count = app.count || (isSelected ? 1 : 0);
+
+                container.innerHTML += `
+                    <div class="p-3 rounded-2xl border transition-all ${isSelected ? 'bg-genuss-gold/15 border-genuss-gold text-white' : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-700'} flex items-center justify-between gap-3">
+                        <div onclick="toggleAppliance('${app.id}')" class="flex items-center gap-3 cursor-pointer flex-1 min-w-0">
+                            <i class="fa-solid ${isSelected ? 'fa-square-check text-genuss-gold text-lg' : 'fa-square text-slate-700 text-lg'}"></i>
+                            <div class="min-w-0">
+                                <div class="text-xs sm:text-sm font-bold truncate">${app.name}</div>
+                                <div class="text-[10px] text-slate-400">~${app.watts} Watts each</div>
+                            </div>
+                        </div>
+
+                        <!-- Quantity control -->
+                        <div class="flex items-center gap-1.5 shrink-0 bg-black/40 px-2 py-1 rounded-lg border border-slate-800">
+                            <button onclick="decrementAppliance('${app.id}')" class="w-6 h-6 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold flex items-center justify-center">-</button>
+                            <span class="w-6 text-center text-xs font-bold text-white">${count}</span>
+                            <button onclick="incrementAppliance('${app.id}')" class="w-6 h-6 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold flex items-center justify-center">+</button>
+                        </div>
+                    </div>
+                `;
+            });
+            calculateTotalLoad();
+        }
+
+        function toggleAppliance(id) {
+            const app = appliances.find(a => a.id === id);
+            if (!app) return;
+            activeApplianceSelection[id] = !activeApplianceSelection[id];
+            if (activeApplianceSelection[id] && (!app.count || app.count === 0)) {
+                app.count = 1;
+            } else if (!activeApplianceSelection[id]) {
+                app.count = 0;
+            }
+            renderApplianceCalculator();
+        }
+
+        function incrementAppliance(id) {
+            const app = appliances.find(a => a.id === id);
+            if (!app) return;
+            app.count = (app.count || 0) + 1;
+            activeApplianceSelection[id] = true;
+            renderApplianceCalculator();
+        }
+
+        function decrementAppliance(id) {
+            const app = appliances.find(a => a.id === id);
+            if (!app) return;
+            if (app.count > 1) {
+                app.count -= 1;
+            } else {
+                app.count = 0;
+                activeApplianceSelection[id] = false;
+            }
+            renderApplianceCalculator();
+        }
+
+        function resetCalculator() {
+            appliances.forEach(app => app.count = 0);
+            activeApplianceSelection = {};
+            renderApplianceCalculator();
+        }
+
+        function calculateTotalLoad() {
+            let totalWatts = 0;
+            appliances.forEach(app => {
+                if (activeApplianceSelection[app.id]) {
+                    const count = app.count || 1;
+                    totalWatts += (app.watts * count);
+                }
+            });
+
+            document.getElementById('totalLoadDisplay').innerText = `${totalWatts.toLocaleString()} Watts`;
+
+            const recBox = document.getElementById('recommendationDisplay');
+            if (totalWatts === 0) {
+                recBox.innerHTML = "Select appliances above to get tailored tier recommendation.";
+            } else if (totalWatts <= 800) {
+                recBox.innerHTML = `
+                    <div class="text-emerald-400 font-bold mb-1"><i class="fa-solid fa-seedling mr-1"></i> Recommended: Starter Tier</div>
+                    <div class="text-xs text-slate-300">Eastman 220Ah Tubular + Sukam 1kVA System will easily support this load (~${totalWatts}W continuous).</div>
+                `;
+            } else if (totalWatts <= 3200) {
+                recBox.innerHTML = `
+                    <div class="text-amber-400 font-bold mb-1"><i class="fa-solid fa-house-laptop mr-1"></i> Recommended: Standard / Middle Class Tier</div>
+                    <div class="text-xs text-slate-300">Felicity 5kVA Hybrid Inverter with 10kWh Lithium Battery or DEYE 5kW Combo required (~${totalWatts}W continuous).</div>
+                `;
+            } else {
+                recBox.innerHTML = `
+                    <div class="text-genuss-gold font-bold mb-1"><i class="fa-solid fa-crown mr-1"></i> Recommended: Luxury & Enterprise Tier</div>
+                    <div class="text-xs text-slate-300">DEYE 12kW Three-Phase Hybrid System with 16kWh LiFePO4 Battery Bank and High-Output Solar Array required (~${totalWatts}W continuous).</div>
+                `;
+            }
+        }
+
+        function toggleCalculator() {
+            const modal = document.getElementById('calculatorModal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.body.classList.add('overflow-hidden');
+            } else {
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        function applyCalculatorRecommendation() {
+            let totalWatts = 0;
+            appliances.forEach(app => {
+                if (activeApplianceSelection[app.id]) {
+                    totalWatts += (app.watts * (app.count || 1));
+                }
+            });
+
+            toggleCalculator();
+
+            let targetTier = 'all';
+            let targetCardId = 'card-product-1';
+
+            if (totalWatts <= 800) {
+                targetTier = 'starter';
+                targetCardId = 'card-product-1';
+            } else if (totalWatts <= 3200) {
+                targetTier = 'mid';
+                targetCardId = 'card-product-3';
+            } else {
+                targetTier = 'luxury';
+                targetCardId = 'card-product-2';
+            }
+
+            setCategoryFilter(targetTier);
+
+            // Smooth scroll to catalog
+            const catalogEl = document.getElementById('catalog');
+            if (catalogEl) {
+                catalogEl.scrollIntoView({ behavior: 'smooth' });
+                // Add temporary glowing highlight to recommended card
+                setTimeout(() => {
+                    const card = document.getElementById(targetCardId);
+                    if (card) {
+                        card.classList.add('highlight-recommendation');
+                        setTimeout(() => card.classList.remove('highlight-recommendation'), 3600);
+                    }
+                }, 600);
+            }
+        }
+
+        // --- FAQ ACCORDION ---
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            const isHidden = content.classList.contains('hidden');
+
+            // Close all
+            for (let i = 1; i <= 5; i++) {
+                const c = document.getElementById(`faq-content-${i}`);
+                const ic = document.getElementById(`faq-icon-${i}`);
+                if (c && ic) {
+                    c.classList.add('hidden');
+                    ic.classList.remove('rotate-180');
+                }
+            }
+
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            }
+        }
+
+        // --- FREE CONSULTATION / QUOTE MODAL ---
+        function openConsultationModal() {
+            const modal = document.getElementById('consultationModal');
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeConsultationModal() {
+            const modal = document.getElementById('consultationModal');
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        function handleQuoteSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('quoteName').value;
+            const phone = document.getElementById('quotePhone').value;
+            const location = document.getElementById('quoteLocation').value;
+            const details = document.getElementById('quoteDetails').value || 'General home/office solar assessment';
+
+            const message = [
+                "Hello GENUSS Operator,",
+                "",
+                "I would like to request an Installation Assessment & Quote:",
+                `Customer Name: ${name}`,
+                `Phone: ${phone}`,
+                `Location: ${location}`,
+                `Requirements: ${details}`,
+                "",
+                "Please connect me with a certified engineer to discuss next steps."
+            ].join("\n");
+
+            closeConsultationModal();
+            const whatsappUrl = `https://wa.me/${WHATSAPP_OPERATOR_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        // --- LIVE SOCIAL PROOF TOAST ---
+        const toastNotifications = [
+            { msg: "New inquiry from Lekki Phase 1, Lagos", time: "Starter Pack · 2 mins ago" },
+            { msg: "Order dispatched to Bodija, Ibadan", time: "Eastman 220Ah Tubular · 8 mins ago" },
+            { msg: "Installation booked in Victoria Island", time: "DEYE 12kW System · 14 mins ago" },
+            { msg: "New inquiry from Magodo GRA, Lagos", time: "Felicity 5kVA Hybrid · 21 mins ago" },
+            { msg: "Order shipped to Gwarinpa, Abuja", time: "DEYE 5kW Combo · 35 mins ago" }
+        ];
+        let toastIndex = 0;
+        let toastTimeout;
+
+        function startSocialProofToast() {
+            showNextToast();
+        }
+
+        function showNextToast() {
+            const toast = document.getElementById('socialProofToast');
+            if (!toast) return;
+
+            const item = toastNotifications[toastIndex];
+            document.getElementById('toastMessage').textContent = item.msg;
+            document.getElementById('toastTime').textContent = item.time;
+
+            toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+
+            toastTimeout = setTimeout(() => {
+                dismissToast();
+                toastIndex = (toastIndex + 1) % toastNotifications.length;
+                setTimeout(showNextToast, 16000); // Trigger next toast after 16s
+            }, 6000); // Show for 6 seconds
+        }
+
+        function dismissToast() {
+            const toast = document.getElementById('socialProofToast');
+            if (toast) {
+                toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            }
+        }
+
+        // --- WHATSAPP CONTACT FLOW ---
+        function contactOnWhatsApp(productId) {
+            const product = productId ? products.find(item => item.id === productId) : null;
+            const message = product
+                ? [
+                    "Hello GENUSS Operator,",
+                    "",
+                    "I would like to enquire about this Black Friday product:",
+                    `Product: ${product.name}`,
+                    `Price: ₦${product.price.toLocaleString()}`,
+                    `Package: ${product.badge}`,
+                    `Includes: ${product.specs.join(", ")}`,
+                    `Recommended for: ${product.powers.join(", ")}`,
+                    `Delivery: ${product.deliveryNote}`,
+                    "",
+                    "Please help me confirm availability and the next steps for delivery/installation."
+                ].join("\n")
+                : [
+                    "Hello GENUSS Operator,",
+                    "",
+                    "I would like help choosing a GENUSS solar product.",
+                    "Please recommend the best option for my needs and budget."
+                ].join("\n");
+
+            const whatsappUrl = `https://wa.me/${WHATSAPP_OPERATOR_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html>
+
